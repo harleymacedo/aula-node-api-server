@@ -3,7 +3,7 @@ const app = express()
 const cors = require('cors')
 
 app.use(cors({
-	origin: '',
+	origin: '*',
 }))
 
 app.get('/api/:id', function(req, res) {
