@@ -21,7 +21,7 @@ app.get('/api/:termo', function(req, res) {
     let resultado = []
     profs.map( (item) => {
         console.log('Teste')
-        if (item.nome === termo || item.area.search(termo)) {
+        if (item.nome === termo || item.area.search(termo) > 0) {
             resultado.push(item)
         }
     })
